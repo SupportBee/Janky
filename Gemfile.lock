@@ -24,7 +24,13 @@ GEM
       multipart-post (~> 1.1)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
+    flowdock (0.3.1)
+      httparty (~> 0.7)
+      multi_json
     hashie (1.2.0)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.1)
     janky (0.9.14)
       activerecord (~> 3.2.0)
@@ -35,9 +41,12 @@ GEM
       sinatra (~> 1.3)
       sinatra_auth_github (~> 0.7.0)
       yajl-ruby (~> 1.1.0)
+    janky-flowdock (0.0.1)
+      flowdock
     json (1.8.0)
     mime-types (1.23)
     multi_json (1.7.7)
+    multi_xml (0.5.4)
     multipart-post (1.2.0)
     mustache (0.99.4)
     nap (0.5.1)
@@ -89,5 +98,6 @@ PLATFORMS
 
 DEPENDENCIES
   janky (~> 0.9)
+  janky-flowdock
   pg
   thin
